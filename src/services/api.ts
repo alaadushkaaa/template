@@ -54,10 +54,10 @@ class LastFmApi {
 
   /**
    * Получает список самых популярных треков
-   * @param {number} [limit=16] - Количество возвращаемых треков
+   * @param {number} [limit=14] - Количество возвращаемых треков
    * @returns {Promise<any>} Объект с данными о треках
    */
-  async getTopTracks(limit: number = 16): Promise<any> {
+  async getTopTracks(limit: number = 14): Promise<any> {
     return this.makeRequest({
       method: 'chart.gettoptracks',
       limit: limit,
